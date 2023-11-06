@@ -1,0 +1,12 @@
+Types requiring changes:
+LPWSTR* = LONG*, then call StrFromPtr on result
+
+
+Types that are OK:
+BOOL*
+IStream* (with olelib reference) (have now added my own IStream definition in WebView2_edit, so should work ok)
+LPCWSTR
+
+
+VBA Type vs IDL Type:
+LPVOID = Any
